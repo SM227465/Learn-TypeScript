@@ -38,3 +38,13 @@ enum Size {
   large = 3,
 }
 */
+
+// we can also use string value like this
+// if we do this we have to explicitly set the value for each member
+/*
+enum Size {
+  Small = 's',
+  Medium = 'm',
+  large = 'l',
+}
+*/
