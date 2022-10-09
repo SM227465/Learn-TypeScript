@@ -7,7 +7,7 @@ lets declare a variable 'quantity' and assume that quantity can either be 50 or 
 // let quantity: 50 | 100 = 50
 
 /*
-we can make this code better even better
+we can make this code even better
 
 instead of hard coding this literal values here we can create a custome type using a type aliases
 */
