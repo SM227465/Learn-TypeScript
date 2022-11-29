@@ -1,0 +1,11 @@
+In this section we will talk about Object-Oriented Programming with TypeScript
+-Classes
+-Constructors
+-Properties and Methods
+-Access control keywords
+-Getters and setters
+-Static members
+-Index signatures
+-Inheritance
+-Polymorphism
+-Abstract classes
