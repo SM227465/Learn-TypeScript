@@ -1,27 +1,40 @@
-// In TypeScript we have 3 access modifiers
-// i) Public
-// ii) Private
-// iii) Protected
+/* In TypeScript we have 3 access modifiers
+i) Public
+ii) Private
+iii) Protected
 
-// class Account {
-//   readonly id: number;
-//   readonly owner: string;
-//   private _balance: number;
-//   nickname?: string;
+when we declare properties all are public by default so we dont have to use public keyword, its optional.
 
-//   constructor(id: number, owner: string, balance: number) {
-//     this.id = id;
-//     this.owner = owner;
-//     this._balance = balance;
-//   }
+If we use the private keyword we can not access the property from outside of class, Only accessable within class
+*/
 
-//   deposite(amount: number): void {
-//     if (amount <= 0) {
-//       throw new Error('Invalid amount!');
-//     }
+class Account {
+  readonly id: number;
+  readonly owner: string;
+  private _balance: number;
+  nickname?: string;
 
-//     this._balance += amount;
-//   }
-// }
+  constructor(id: number, owner: string, balance: number) {
+    this.id = id;
+    this.owner = owner;
+    this._balance = balance;
+  }
 
-// let account = new Account(1, 'Raizo', 0);
+  deposite(amount: number): void {
+    if (amount <= 0) {
+      throw new Error('Invalid amount!');
+    }
+
+    this._balance += amount;
+  }
+
+  // private calculateTax() {}
+
+  getBalance(): number {
+    return this._balance;
+  }
+}
+
+let account = new Account(1, 'Raizo', 0);
+
+console.log(account.getBalance());
